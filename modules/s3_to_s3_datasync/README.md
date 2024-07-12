@@ -4,8 +4,8 @@ To sync data from one bucket to another in the SAME account, use the following r
 
 ```
 locals {
-  data_sync_destination_bucket = "adarga-production-archived-data"
-  data_sync_source_bucket      = aws_s3_bucket.ingst_text.id
+  data_sync_destination_bucket = "production-archived-data"
+  data_sync_source_bucket      = "global-archived-data"
 }
 
 module "datasync_my_bucket" {
